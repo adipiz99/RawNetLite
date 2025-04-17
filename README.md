@@ -12,7 +12,7 @@
 This repository contains the official implementation of the paper:
 
 > **End-to-end Audio Deepfake Detection from RAW Waveforms: a RawNet-Based Approach with Cross-Dataset Evaluation**  
-> *Andrea Di Pierno, Dario Allegra, Luca Guarnera, Sebastiano Battiato*  
+> *Andrea Di Pierno, Luca Guarnera, Dario Allegra, Sebastiano Battiato*  
 > In Proceedings of the **VERIMEDIA Workshop at IJCNN 2025**, Rome, Italy.
 
 ---
