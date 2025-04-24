@@ -67,7 +67,7 @@ If you use this code, please cite our paper:
 ├── requirements.txt          # Dependencies
 ├── tester.py                 # Testing script
 ```
-## 🛠 Installation
+## 🛠 Setup
 1. Clone the repository:
 
 ```bash
@@ -144,4 +144,4 @@ If you have questions or find this project useful, feel free to contact us:
 
 ## 📌 Acknowledgments
 
-This research is part of the National Ph.D. in Cybersecurity (Italy) and was supported by the Department of Mathematics and Computer Science, University of Catania, and IMT School for Advanced Studies Lucca.
+This study has been partially supported by SERICS (PE00000014) under the MUR National Recovery and Resilience Plan funded by the European Union - NextGenerationEU
