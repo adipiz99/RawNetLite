@@ -170,10 +170,10 @@ def train():
             best_f1 = f1
             save_path = os.path.join(MODEL_ROOT, MODEL_NAME)
             torch.save(model.state_dict(), save_path)
-            print(f"✅ Saved best model at epoch {epoch+1} with F1 = {f1:.4f}")
+            print(f"Saved best model at epoch {epoch+1} with F1 = {f1:.4f}")
 
     # Test phase
-    print("\n🔎 Evaluation on test set:")
+    print("\nEvaluation on test set:")
     model.load_state_dict(torch.load(os.path.join(MODEL_ROOT, MODEL_NAME)))
     model.eval()
 
