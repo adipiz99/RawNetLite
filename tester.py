@@ -31,7 +31,7 @@ models = [
     "augmented_triple_cross_domain_focal_rawnet_lite.pt"
 ]
 
-# Funzione per calcolo EER
+# EER
 def compute_eer(y_true, y_scores):
     fpr, tpr, thresholds = roc_curve(y_true, y_scores, pos_label=1)
     fnr = 1 - tpr

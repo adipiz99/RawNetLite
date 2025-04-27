@@ -63,9 +63,10 @@ If you use this code, please cite our paper:
 ├── LICENSE                   # License file
 ├── Mixed_dataset.py          # Mixed-domain PyTorch datasets
 ├── RawNetLite.py             # Main model architecture
-└── README.md                 # This file
+├── README.md                 # This file
 ├── requirements.txt          # Dependencies
 ├── tester.py                 # Testing script
+└── trainer.py                  # Training script
 ```
 ## 🛠 Setup
 1. Clone the repository:
@@ -96,9 +97,20 @@ This will create `real_processed/` and `fake_processed/` folders with normalized
 
 ---
 
-## 🧪 Evaluation
+## 🧪 Training & evaluation
 
-To run the test bench and evaluate all models across all datasets:
+To run the training script, set the parameters in `trainer.py` and use:
+
+```bash
+python trainer.py
+```
+The script outputs:
+- Training loss, validation accuracy and F1 score
+- Classification metrics (Precision, Recall, F1) for the validation set
+- Equal Error Rate (EER) and threshold for the validation set
+- A model trained following the specified parameters
+
+To run the test bench and evaluate all models across all datasets, set the parameters in `tester.py` and use:
 
 ```bash
 python tester.py
@@ -109,11 +121,19 @@ The script outputs:
 - Equal Error Rate (EER) and threshold
 - Support for FakeOrReal, AVSpoof2021, CodecFake, and mixed-domain evaluations
 
+Please note that the training and testing scripts need to be run __using different data__, to avoid dataset overlapping.
+
 ---
 
 ## 🎯 Pretrained Models
 
 Pretrained have been released into the `models/` folder.
+
+- `rawnet_lite.pt`: Basic RawNetLite model trained on the FakeOrReal dataset with BCE Loss.
+- `cross_domain_rawnet_lite.pt`: Cross-domain RawNetLite model trained on the FOR dataset and the AVSpoof2021 dataset with BCE Loss.
+- `cross_domain_focal_rawnet_lite.pt`: Cross-domain RawNetLite model trained on the FOR dataset and the AVSpoof2021 dataset with Focal Loss.
+- `triple_cross_domain_focal_rawnet_lite.pt`: Triple cross-domain RawNetLite model trained on the FOR dataset, the AVSpoof2021 dataset, and the CodecFake dataset with Focal Loss.
+- `augmented_triple_cross_domain_focal_rawnet_lite.pt`: Augmented triple cross-domain RawNetLite model trained on the FOR dataset, the AVSpoof2021 dataset, and the CodecFake dataset with Focal Loss and augmentation.
 
 ---
 
