@@ -3,11 +3,6 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![PyTorch](https://img.shields.io/badge/framework-pytorch-yellow.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-![GitHub Repo stars](https://img.shields.io/github/stars/adipiz99/RawNetLite)
-![GitHub Repo forks](https://img.shields.io/github/forks/adipiz99/RawNetLite)
-![GitHub Repo watchers](https://img.shields.io/github/watchers/adipiz99/RawNetLite)
-![GitHub contributors](https://img.shields.io/github/contributors/adipiz99/RawNetLite)
-![GitHub repo size](https://img.shields.io/github/repo-size/adipiz99/RawNetLite)
 
 This repository contains the official implementation of the paper:
 
